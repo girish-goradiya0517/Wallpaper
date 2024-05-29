@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/colorBackgroundDarkCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivWallpaper1"
+                android:layout_width="115dp"
+                android:layout_height="230dp"
+                android:src="@drawable/logo"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/freme"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/lock"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivWallpaper2"
+                android:layout_width="115dp"
+                android:layout_height="230dp"
+                android:src="@drawable/logo"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/freme"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/applyWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:background="@drawable/round_edge"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:text="Apply Wallpaper"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

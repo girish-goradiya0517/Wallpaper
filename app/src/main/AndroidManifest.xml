@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.ACCESS_UI_MODE_FLAGS" />
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WallpaperAppWithRingtone"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.PlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activity.RingtoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LatestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GoogleSignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.WallpaperAppWithRingtone.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.WallpaperDetailsActivity"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:enabled="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/applovin_sdk_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <receiver
+            android:name=".Utils.DownloadCompleteReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name=".Utils.VideoLiveWallpaperService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:process=":wallpaper">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" />
+        </service>
+    </application>
+
+</manifest>

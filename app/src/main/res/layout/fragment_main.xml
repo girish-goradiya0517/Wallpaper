@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lyt_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvColors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Colors"
+                        android:textColor="@color/tabText"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvColors"
+                        android:layout_marginStart="5dp"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:elevation="0dp"
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginHorizontal="4dp"
+                        android:layout_marginVertical="5dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="8dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:background="@android:color/transparent">
+
+                            <com.github.islamkhsh.CardSliderViewPager
+                                android:id="@+id/ScreenSlider"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:forceHasOverlappingRendering="false"
+                                app:auto_slide_time="3"
+                                app:cardSlider_indicator="@id/indicator"
+                                app:cardSlider_otherPagesWidth="15dp"
+                                app:cardSlider_pageMargin="5dp"
+                                app:layout_constraintTop_toTopOf="@+id/indicator" />
+
+                            <com.github.islamkhsh.CardSliderIndicator
+                                android:id="@+id/indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                app:indicatorsToShow="5" />
+                        </FrameLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Wallpaper For You"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExplorePopular"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:drawableEnd="@drawable/angle_double"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawablePadding="-4dp"
+                        android:text="Explore"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewWallpaperPopular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Top Creators"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvExploreUsers"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="end|center_vertical"-->
+<!--                        android:drawableEnd="@drawable/angle_double"-->
+<!--                        android:drawableTint="@color/colorAccent"-->
+<!--                        android:drawablePadding="-4dp"-->
+<!--                        android:text="Explore"-->
+<!--                        android:textColor="@color/colorAccent"-->
+<!--                        android:textSize="14dp"-->
+<!--                        android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewTopCreator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Live Wallpapers"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExploreLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:drawableEnd="@drawable/angle_double"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawablePadding="-4dp"
+                        android:text="Explore"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLiveWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Trending Categories"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExploreCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:drawableEnd="@drawable/angle_double"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawablePadding="-4dp"
+                        android:text="Explore"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Trending Ringtone"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExploreRingtone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:drawableEnd="@drawable/angle_double"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawablePadding="-4dp"
+                        android:text="Explore"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewRingtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Recent Wallpaper"
+                        android:textColor="@color/tabText"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExploreLatest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:drawableEnd="@drawable/angle_double"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawablePadding="-4dp"
+                        android:text="Explore"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvColors"
+                    android:layout_marginStart="5dp" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/lyt_no_item_home"
+                layout="@layout/include_no_item"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/lyt_failed_home"
+                layout="@layout/include_failed"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

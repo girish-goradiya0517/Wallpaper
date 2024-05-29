@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WallpaperAppWithRingtone"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">@font/nunito_sans</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+    <style name="SplashScreen"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">@font/splash_screen</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Menu_text" parent="@android:style/Widget.TextView">
+        <item name="fontFamily">@font/nunito_sans</item>
+    </style>
+
+
+
+    <style name="Theme.WallpaperAppWithRingtone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomTabTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/custom_font</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DialogCustomTheme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Theme.WallpaperAppWithRingtone">
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="SimpleSearchViewStyle">
+
+        <!-- Change search textColor -->
+        <item name="android:textColor">@color/tabText</item>
+
+        <!-- Search bar/card background -->
+        <item name="searchBackground">@color/colorPrimaryDark</item>
+
+        <item name="cursorColor">@color/tabText</item>
+        <item name="hintColor">@color/searchHint</item>
+
+        <!-- Enable voice search -->
+        <item name="voiceSearch">true</item>
+    </style>
+
+    <style name="Theme.WallpaperAppWithRingtone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WallpaperAppWithRingtone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

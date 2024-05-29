@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activity.UploadActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitleTextColor="@color/MainText"
+            app:titleTextColor="@color/MainText"
+            app:navigationIcon="@drawable/ic_baseline_arrow"
+            android:background="@color/bgMain"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="File Name :"/>
+
+        <EditText
+            android:id="@+id/wallpaperName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#F1F1F1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Choose Category :"/>
+
+        <Spinner
+            android:id="@+id/your_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#F1F1F1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Select File :"/>
+
+
+        <RelativeLayout
+            android:id="@+id/chooseWallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#F1F1F1"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/noFileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_save"
+                    android:layout_margin="10dp"
+                    app:tint="@color/dark_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/dark_gray"
+                    android:text="Click here to Select"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/wallpaper_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="22sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_button_background"
+            android:textColor="@color/white"
+            android:text="Upload"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

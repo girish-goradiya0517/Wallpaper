@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlWall"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="9dp"
+                app:cardElevation="1dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/wallpaper_lock"/>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lock_time" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="9dp"
+                app:cardElevation="1dp"
+                android:layout_marginStart="4dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/side_nav_bar"/>
+
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/double_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/lock_time" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="107dp"
+            android:layout_centerInParent="true"
+            android:layout_height="230dp">
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+
+
+            </ViewFlipper>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/android_frame"
+            android:gravity="center"
+            android:visibility="invisible">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+            <TextView
+                android:id="@+id/setWallpaper"
+                android:layout_width="312dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/rlWall"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_edge"
+                android:backgroundTint="#638E9495"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Apply"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

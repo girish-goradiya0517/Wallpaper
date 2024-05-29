@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.1.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.1.0)" variant="fatal" version="8.1.0">
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/CategoryFragment.java"
+            line="64"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        this.recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/FavoriteActivity.java"
+            line="57"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/FavoriteActivity.java"
+            line="91"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentDouble.java"
+            line="71"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTopCreator.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="207"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewLiveWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="230"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="245"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRecipe.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="272"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaperPopular.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentHome.java"
+            line="274"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentLive.java"
+            line="62"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentRecent.java"
+            line="72"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/FragmentSearchWall.java"
+            line="66"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/LatestActivity.java"
+            line="93"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/ProfileActivity.java"
+            line="167"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewWallpaper.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/ProfileActivity.java"
+            line="167"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/ProfileActivity.java"
+            line="175"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewRingtone.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/ProfileActivity.java"
+            line="175"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/RingtoneActivity.java"
+            line="89"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/RingtoneFragment.java"
+            line="69"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewCategory.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/RingtoneFragment.java"
+            line="69"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/RingtoneFragment.java"
+            line="75"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/RingtoneFragment.java"
+            line="75"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Fragment/RingtoneFragmentSearch.java"
+            line="63"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/dsquare/wallzee/Activity/WallpaperActivity.java"
+            line="83"
+            column="9"/>
+    </issue>
+
+</issues>

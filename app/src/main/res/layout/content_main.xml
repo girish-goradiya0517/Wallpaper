@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.dsquare.wallzee.Utils.CustomTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:stl_defaultTabBackground="@android:color/transparent"
+        app:stl_defaultTabTextAllCaps="false"
+        app:stl_defaultTabTextColor="@color/tabText"
+        app:stl_defaultTabTextHorizontalPadding="12dp"
+        app:stl_defaultTabTextSize="15sp"
+        app:stl_dividerColor="@color/transparent"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="@color/colorLight"
+        app:stl_indicatorCornerRadius="18dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="36dp"
+        app:stl_underlineColor="@color/transparent"
+        app:stl_underlineThickness="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:tabTextAppearance="@style/CustomTabTextStyle" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_above="@id/bannerAdView"
+        android:layout_centerInParent="true" />
+
+    <com.ymg.ads.sdk.ui.BannerAdView
+        android:id="@+id/bannerAdView"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

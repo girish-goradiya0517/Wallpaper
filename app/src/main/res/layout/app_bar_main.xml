@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/Theme.WallpaperAppWithRingtone.AppBarOverlay">
+
+
+        <RelativeLayout
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
+                android:layout_toStartOf="@+id/iv_user_pp"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                app:title="@string/app_name"
+                app:titleTextColor="@color/black"
+                android:elevation="0dp"
+                app:popupTheme="@style/Theme.WallpaperAppWithRingtone.PopupOverlay" />
+
+            <ImageView
+                android:id="@+id/iv_user_pp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.ferfalk.simplesearchview.SimpleSearchView
+        android:visibility="gone"
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:background="@color/bgMain"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/SimpleSearchViewStyle"
+        />
+
+    <include layout="@layout/content_main" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
