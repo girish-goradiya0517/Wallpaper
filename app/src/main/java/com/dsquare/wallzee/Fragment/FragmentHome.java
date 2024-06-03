@@ -85,18 +85,14 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
     private int post_total = 0;
     private int failed_page = 0;
     List<Wallpaper> items = new ArrayList<>();
-    List<Wallpaper> poplar = new ArrayList<>();
     List<Wallpaper> live = new ArrayList<>();
     List<Ringtone> ringtones = new ArrayList<>();
     List<Category> categoryList = new ArrayList<>();
 
     List<Users> users = new ArrayList<>();
-    //List<Recipe> featured = new ArrayList<>();
     String order, filter;
-    //View lyt_home_content;
     private Timer timer;
     private TimerTask timerTask;
-    private final Handler handler = new Handler();
     private PrefManager prefManager;
     private RelativeLayout rlMain;
 
@@ -123,32 +119,6 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         filter = getArguments() != null ? getArguments().getString(ARG_FILTER) : "";
     }
 
-    public void updateUsersDisplayOrder(List<Users> users, int userId1, int userId2) {
-        int index1 = -1;
-        int index2 = -1;
-
-        // Find the indices of the Users objects with the given user IDs
-        for (int i = 0; i < users.size(); i++) {
-            Users user = users.get(i);
-            if (user.getId() == userId1) {
-                index1 = i;
-            } else if (user.getId() == userId2) {
-                index2 = i;
-            }
-        }
-
-        // Check if both user IDs were found
-        if (index1 != -1 && index2 != -1) {
-            Users user1 = users.remove(index1);
-            Users user2 = users.remove(index2);
-
-            users.add(0, user1);
-            users.add(1, user2);
-
-
-        }
-    }
-
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -171,19 +141,13 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         requestSlider();
         sliderAdapter = new SliderAdapter(sliderModels, requireContext(), this);
         rlMain = root_view.findViewById(R.id.lyt_parent);
-        //lyt_home_content = root_view.findViewById(R.id.lyt_home_content);
         swipeRefreshLayout = root_view.findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         rlMain.setVisibility(View.GONE);
 
-        //Pager
-        //resetViewPager();
-
-        //category
         recyclerViewCategory = root_view.findViewById(R.id.recyclerViewCategory);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         recyclerViewCategory.setLayoutManager(layoutManager);
-//        recyclerViewCategory.setHasFixedSize(true);
         adapterCategory = new AdapterCategory(getActivity(), categoryList);
         recyclerViewCategory.setAdapter(adapterCategory);
 
@@ -198,7 +162,6 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         recyclerViewTopCreator = root_view.findViewById(R.id.recyclerViewTopCreator);
         LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         recyclerViewTopCreator.setLayoutManager(layoutManager1);
-//        recyclerViewTopCreator.setHasFixedSize(true);
 
         adapterUser = new AdapterUser(getActivity(), users);
         recyclerViewTopCreator.setAdapter(adapterUser);
@@ -219,7 +182,6 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         layoutManager3.setReverseLayout(false); // Set reverseLayout as needed
 
         recyclerViewLiveWallpaper.setLayoutManager(layoutManager3);
-//        recyclerViewLiveWallpaper.setHasFixedSize(true);
         adapterLive = new AdapterPopular(getActivity(), recyclerViewLiveWallpaper, live);
         recyclerViewLiveWallpaper.setAdapter(adapterLive);
 
@@ -227,10 +189,9 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         //Ringtone
         recyclerViewRingtone = root_view.findViewById(R.id.recyclerViewRingtone);
         StaggeredGridLayoutManager layoutManager4 = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL);
-        layoutManager4.setReverseLayout(false); // Set reverseLayout as needed
+        layoutManager4.setReverseLayout(false);
 
         recyclerViewRingtone.setLayoutManager(layoutManager4);
-//        recyclerViewRingtone.setHasFixedSize(true);
         adapterRingtone = new AdapterRingtone(getActivity(), ringtones, this);
         recyclerViewRingtone.setAdapter(adapterRingtone);
 
@@ -238,7 +199,6 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         //recent wallpaper
         recyclerViewRecipe = root_view.findViewById(R.id.recyclerViewWallpaper);
         recyclerViewRecipe.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-//        recyclerViewRecipe.setHasFixedSize(true);
         adapterWallpaper = new AdapterRecent(getActivity(), recyclerViewRecipe, items);
         recyclerViewRecipe.setAdapter(adapterWallpaper);
 
@@ -249,9 +209,7 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         layoutManager3.setReverseLayout(false); // Set reverseLayout as needed
 
         recyclerViewWallpaperPopular.setLayoutManager(layoutManager5);
-//        recyclerViewWallpaperPopular.setHasFixedSize(true);
         adapterPopular = new AdapterPopular(getActivity(), recyclerViewWallpaperPopular, items);
-//        recyclerViewWallpaperPopular.setHasFixedSize(true);
         recyclerViewWallpaperPopular.setAdapter(adapterPopular);
 
 
@@ -369,44 +327,6 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
 
     }
 
-//    private void resetViewPager() {
-//        viewPager = root_view.findViewById(R.id.view_pager_featured);
-//        pagerAdapter = new RecipePagerAdapter(getContext(), new ArrayList<>());
-//        viewPager.setAdapter(pagerAdapter);
-//        startAutoSwipe();
-//    }
-
-    private void startAutoSwipe() {
-        timer = new Timer();
-        timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(() -> {
-                    int currentItem = viewPager.getCurrentItem();
-                    int nextItem = 0;
-                    int adapterCount = viewPager.getAdapter().getCount();
-                    if (adapterCount > 0) {
-                        nextItem = (currentItem + 1) % adapterCount;
-                    }
-                    viewPager.setCurrentItem(nextItem);
-                });
-            }
-        };
-        timer.schedule(timerTask, 8000, 8000);
-    }
-
-
-//    public void setLoadMoreNativeAd(int current_page) {
-//        Log.d("page", "currentPage: " + current_page);
-//        // Assuming final total items equal to real post items plus the ad
-//        int totalItemBeforeAds = (adapterWallpaper.getItemCount() - current_page);
-//        if (post_total > totalItemBeforeAds && current_page != 0) {
-//            int next_page = current_page + 1;
-//            requestAction(next_page);
-//        } else {
-//            adapterWallpaper.setLoaded();
-//        }
-//    }
 
     public void setLoadMore(int current_page) {
         if (post_total > adapterWallpaper.getItemCount() && current_page != 0) {
@@ -417,35 +337,20 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
         }
     }
 
-//    public static FragmentWallpaper newInstance(String order, String filter) {
-//        FragmentWallpaper fragment = new FragmentWallpaper();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_ORDER, order);
-//        args.putString(ARG_FILTER, filter);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
     }
 
-    private void displayApiResult(final List<Category> featured, final List<Wallpaper> wallpapers, final List<Category> categories, final List<Users> users,
-                                  final List<Wallpaper> poplar,
+    private void displayApiResult(final List<Wallpaper> wallpapers, final List<Category> categories, final List<Users> users,
                                   final List<Wallpaper> live, final List<Ringtone> ringtones) {
-        //pagerAdapter.setListData(featured);
-//        updateUsersDisplayOrder(users, prefManager.getInt("USER_ID"), 20);
-//        for (Users user : users) {
-//            Log.d("USER", "displayApiResult UserName :" + user.getCreatorName() + " :" + user.getTotal_uploads());
-//        }
         adapterUser.setListData(users);
         adapterCategory.setListData(categories);
         adapterWallpaper.insertDataWithNativeAd(wallpapers);
         Collections.reverse(live);
         adapterLive.insertData(live);
         adapterRingtone.setListData(ringtones);
-        String url = Config.WEBSITE_URL + "images/wallpaper/";
         swipeProgress(false);
     }
 
@@ -481,7 +386,7 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
                     rlMain.setVisibility(View.VISIBLE);
                     post_total = resp.count_total;
                     Log.d("SIZE", "onResponse: " + live.size());
-                    displayApiResult(resp.featured, resp.recent, resp.categories, resp.users, resp.popula, Wallpaper.distinct(resp.live), resp.ringtone);
+                    displayApiResult(resp.recent, resp.categories, resp.users, Wallpaper.distinct(resp.live), resp.ringtone);
                 } else {
                     onFailRequest(page_no);
                 }
@@ -585,13 +490,11 @@ public class FragmentHome extends Fragment implements SliderAdapter.OnSliderClic
 
     private void swipeProgress(final boolean show) {
         if (!show) {
-            swipeRefreshLayout.setRefreshing(show);
-
+            swipeRefreshLayout.setRefreshing(false);
             return;
         }
         swipeRefreshLayout.post(() -> {
             swipeRefreshLayout.setRefreshing(show);
-
         });
     }
 

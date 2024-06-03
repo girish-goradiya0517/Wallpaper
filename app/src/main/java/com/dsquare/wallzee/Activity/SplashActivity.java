@@ -2,20 +2,17 @@ package com.dsquare.wallzee.Activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.core.content.res.ResourcesCompat;
 
 import com.dsquare.wallzee.Callback.CallbackAds;
 import com.dsquare.wallzee.Config;
@@ -25,14 +22,10 @@ import com.dsquare.wallzee.Model.Settings;
 import com.dsquare.wallzee.R;
 import com.dsquare.wallzee.Rest.ApiInterface;
 import com.dsquare.wallzee.Rest.RestAdapter;
-import com.dsquare.wallzee.Utils.AdsManager;
 import com.dsquare.wallzee.Utils.AdsPref;
 import com.dsquare.wallzee.Utils.Anims;
 import com.dsquare.wallzee.Utils.DarkModeUtils;
 import com.dsquare.wallzee.Utils.PrefManager;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -61,10 +54,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         prf = new PrefManager(this);
-//        adsManager = new AdsManager(this);
         adsPref = new AdsPref(this);
-//        developers = findViewById(R.id.developers);
-//        parentLayout = findViewById(R.id.parentLayout);
         splashTxt = findViewById(R.id.splashTxt);
         logo = findViewById(R.id.logo);
         Anims aVar = new Anims(this.getResources().getDrawable(R.drawable.logo));
@@ -76,16 +66,6 @@ public class SplashActivity extends AppCompatActivity {
 
 
     private void onSplashFinished() {
-//        Timer myTimer = new Timer();
-//        myTimer.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                SplashActivity.this.runOnUiThread(() -> {
-//                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
-//                    finish();
-//                });
-//            }
-//        }, 100);
         SplashActivity.this.runOnUiThread(() -> {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
@@ -185,10 +165,6 @@ public class SplashActivity extends AppCompatActivity {
                 getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             }
         }
-
-
-
-
 
     }
 }

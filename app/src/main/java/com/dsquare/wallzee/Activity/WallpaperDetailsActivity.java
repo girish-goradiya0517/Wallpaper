@@ -403,7 +403,6 @@ public class WallpaperDetailsActivity extends AppCompatActivity implements Repor
 
 
     private void applyFunction() {
-//        Toast.makeText(this, "Apply function Called.", Toast.LENGTH_SHORT).show();
         if (liveItemMain != null) {
             if (liveItemMain.type.equals("upload")) {
                 Log.d(TAG, "applyFunction: showSetUsOption gif for live -- ");
@@ -682,17 +681,8 @@ public class WallpaperDetailsActivity extends AppCompatActivity implements Repor
         }
     }
 
-//favorite state show on swipe
-//    private void favToggle(Wallpaper wallpaper2) {
-//        if (this.dbHelper.isFavoritesExist(wallpaper2.image_id)) {
-//            btnFavorite.setImageResource(R.drawable.ic_favorite_fill);
-//        } else {
-//            btnFavorite.setImageResource(R.drawable.ic_favorite_border);
-//        }
-//    }
 
-//our custom adapter
-//This Admin panel and WallpaperX app Created by YMG Developers
+
 class CustomPagerAdapter extends PagerAdapter {
 
     Context mContext;
@@ -736,7 +726,7 @@ class CustomPagerAdapter extends PagerAdapter {
         container.addView(ll, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         }
         catch (Exception e){
-
+            Log.d(TAG,"Exception : "+e);
         }
         return ll;
     }
@@ -744,7 +734,6 @@ class CustomPagerAdapter extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);
-//            player.release();
     }
 }
 
@@ -792,21 +781,13 @@ class CustomPagerAdapter extends PagerAdapter {
         });
 
 
-        reportLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showReportDialog();
-            }
-        });
+        reportLayout.setOnClickListener(view -> showReportDialog());
 
-        btnInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
-                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-                } else {
-                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-                }
+        btnInfo.setOnClickListener(v -> {
+            if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+            } else {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
             }
         });
     }
@@ -1140,24 +1121,6 @@ class CustomPagerAdapter extends PagerAdapter {
 
 
     public void showSetUsOption() {
-//        AlertDialog.Builder builder = new AlertDialog.Builder(WallpaperDetailsActivity.this);
-//        builder.setTitle("Set us :");
-//        builder.setSingleChoiceItems(names, -1, (dialog, item) -> {
-//            switch (item) {
-//                case 0:
-//                    setWallpaperToHomeScreen();
-//                    break;
-//                case 1:
-//                    setWallpaperToLockScreen();
-//                    break;
-//                case 2:
-//                    setWallpaperToBothScreen();
-//                    break;
-//            }
-//            alertDialog.dismiss();
-//        });
-//        alertDialog = builder.create();
-//        alertDialog.show();
         showCustomDialog();
     }
 

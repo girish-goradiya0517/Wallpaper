@@ -4,7 +4,6 @@ package com.dsquare.wallzee.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 
 import com.dsquare.wallzee.Activity.WallpaperActivity;
 import com.dsquare.wallzee.Adapter.AdapterCategoryFull;
@@ -61,7 +59,6 @@ public class CategoryFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
-//        recyclerView.setHasFixedSize(true);
 
 
         adapterCategory = new AdapterCategoryFull(getActivity(), new ArrayList<>());

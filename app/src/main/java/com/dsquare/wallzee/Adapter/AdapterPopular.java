@@ -4,7 +4,6 @@ import static com.dsquare.wallzee.Config.LOAD_MORE;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,20 +35,10 @@ public class AdapterPopular extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private boolean loading;
     private OnLoadMoreListener onLoadMoreListener;
     private Context context;
-    private OnItemClickListener mOnItemClickListener;
-    private Wallpaper pos;
-    private CharSequence charSequence = null;
 
 
     boolean scrolling = false;
 
-    public interface OnItemClickListener {
-        void onItemClick(View view, Wallpaper obj, int position);
-    }
-
-    public void setOnItemClickListener(final OnItemClickListener mItemClickListener) {
-        this.mOnItemClickListener = mItemClickListener;
-    }
 
     public AdapterPopular(Context context, RecyclerView view, List<Wallpaper> items) {
         this.items = items;
@@ -240,25 +229,6 @@ public class AdapterPopular extends RecyclerView.Adapter<RecyclerView.ViewHolder
         notifyItemRangeInserted(positionStart, itemCount);
     }
 
-//    public void insertDataWithNativeAd(List<Wallpaper> items) {
-//        setLoaded();
-//        int positionStart = getItemCount();
-//        for (Wallpaper post : items) {
-//            Log.d("item", "TITLE: " + post.wallpaper_image);
-//        }
-//        if (items.size() >= adsPref.getNativeAdIndex()) {
-//            if (2 == 4) {
-//                items.add(4, new Channel());
-//            } else if (3 == 3) {
-//                items.add(adsPref.getNativeAdIndex(), new Channel());
-//            } else {
-//                items.add(adsPref.getNativeAdIndex(), new Channel());
-//            }
-//        }
-//        int itemCount = items.size();
-//        this.items.addAll(items);
-//        notifyItemRangeInserted(positionStart, itemCount);
-//    }
 
     private void lastItemViewDetector(RecyclerView recyclerView) {
 
@@ -299,10 +269,6 @@ public class AdapterPopular extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void resetListData() {
         this.items.clear();
         notifyDataSetChanged();
-    }
-
-    public void setOnLoadMoreListener(OnLoadMoreListener onLoadMoreListener) {
-        this.onLoadMoreListener = onLoadMoreListener;
     }
 
 

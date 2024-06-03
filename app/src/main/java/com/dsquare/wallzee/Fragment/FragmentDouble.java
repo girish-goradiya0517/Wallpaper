@@ -68,8 +68,6 @@ public class FragmentDouble extends Fragment {
 
         recyclerView = root_view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
-//        recyclerView.setHasFixedSize(true);
-
         //set data and list adapter
         adapterRecent = new AdapterDuo(getActivity(), recyclerView, new ArrayList<Duo>());
         recyclerView.setAdapter(adapterRecent);
